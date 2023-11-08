@@ -18,7 +18,7 @@ return {
 
 			lua_ls = {
 				Lua = {
-					workspace = { checkThirdParty = false },
+					workspace = { checkThirdParty = "Disable" },
 					telemetry = { enable = false },
 				},
 			},
