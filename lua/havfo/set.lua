@@ -1,6 +1,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -29,11 +32,11 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.listchars = {
-  tab = "→ ",
-  trail = "·",
-  extends = "…",
-  precedes = "…",
-  nbsp = "␣",
+	tab = "→ ",
+	trail = "·",
+	extends = "…",
+	precedes = "…",
+	nbsp = "␣",
 }
 
 vim.opt.list = true
