@@ -26,6 +26,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz", { desc = "Go to previous lo
 
 vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Replace word under cursor" })
 vim.keymap.set("n", "<leader>rw", "<cmd>%s/\\s\\+$//e<CR>", { desc = "Remove trailing whitespace" })
+vim.keymap.set("n", "<leader>bj", "<cmd>%!jq<CR>", { desc = "Beautify JSON" })
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
