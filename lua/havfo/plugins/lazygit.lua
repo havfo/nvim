@@ -6,5 +6,6 @@ return {
 	},
 	config = function()
 		vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { desc = 'Open lazygit' })
+		vim.keymap.set('n', '<M-g>', ':LazyGit<cr>', { desc = 'Open lazygit' })
 	end,
 }

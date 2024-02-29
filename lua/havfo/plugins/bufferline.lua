@@ -30,7 +30,9 @@ return {
 		})
 
 		vim.keymap.set('n', '<leader>bc', bufremove.delete, { desc = "Close current buffer", noremap = true, silent = true })
+		vim.keymap.set('n', '<M-c>', bufremove.delete, { desc = "Close current buffer", noremap = true, silent = true })
 		vim.keymap.set('n', '<leader>bo', ':BufferLineCloseOthers<cr>', { desc = "Close other buffers", noremap = true, silent = true })
+		vim.keymap.set('n', '<M-o>', ':BufferLineCloseOthers<cr>', { desc = "Close other buffers", noremap = true, silent = true })
 		vim.keymap.set('n', '<leader>bn', ':BufferLineCycleNext<cr>', { desc = "Goto next buffer", noremap = true, silent = true })
 		vim.keymap.set('n', '<leader>bp', ':BufferLineCyclePrev<cr>', { desc = "Goto previous buffer", noremap = true, silent = true })
 		vim.keymap.set('n', '<leader>1', ':BufferLineGoToBuffer 1<cr>', { noremap = true, silent = true })
