@@ -8,7 +8,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>df", ":w !diff % -<CR>", { desc = "Diff current buffer with file on disk" })
-vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste from system clipboard" })
+vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without losing yank" })
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to system clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy to system clipboard" })
