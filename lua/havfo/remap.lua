@@ -32,3 +32,8 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<M-d>', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+
+vim.keymap.set('n', '<M-Left>', '<C-w>h', { desc = 'Move to left window' })
+vim.keymap.set('n', '<M-Down>', '<C-w>j', { desc = 'Move to down window' })
+vim.keymap.set('n', '<M-Up>', '<C-w>k', { desc = 'Move to up window' })
+vim.keymap.set('n', '<M-Right>', '<C-w>l', { desc = 'Move to right window' })
