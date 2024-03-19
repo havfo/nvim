@@ -32,9 +32,9 @@ return {
 
 		vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
 		vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-		vim.keymap.set('n', '<M-s>', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
+		vim.keymap.set('n', '<C-f>', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 		vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 		vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-		vim.keymap.set('n', '<M-f>', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
+		vim.keymap.set('n', '<C-g>', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
 	end
 }
