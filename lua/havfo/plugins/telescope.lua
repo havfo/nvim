@@ -25,9 +25,21 @@ return {
 				require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
 					winblend = 10,
 					previewer = false,
+					default_text = "'",
 				})
 			end,
-			{ desc = '[/] Fuzzily search in current buffer' }
+			{ desc = '[/] Search in current buffer' }
+		)
+
+		vim.keymap.set('n', '<C-s>',
+			function()
+				require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+					winblend = 10,
+					previewer = false,
+					default_text = "'",
+				})
+			end,
+			{ desc = '[S] Search in current buffer' }
 		)
 
 		vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
