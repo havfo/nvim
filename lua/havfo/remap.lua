@@ -12,6 +12,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without losing yank" 
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to system clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy to system clipboard" })
+vim.keymap.set("n", "<leader>cf", [[:%y+<CR>]], { desc = "Copy entire buffer to system clipboard" })
 
 vim.keymap.set({"n", "v"}, "<leader>dv", [["_d]], { desc = "Delete to black hole register" })
 
