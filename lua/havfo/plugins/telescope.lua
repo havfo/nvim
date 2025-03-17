@@ -31,7 +31,7 @@ return {
 			{ desc = '[/] Search in current buffer' }
 		)
 
-		vim.keymap.set('n', '<C-s>',
+		vim.keymap.set('n', '<M-s>',
 			function()
 				require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
 					winblend = 10,

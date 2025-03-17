@@ -14,7 +14,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Copy to system clip
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Copy to system clipboard" })
 vim.keymap.set("n", "<leader>cf", [[:%y+<CR>]], { desc = "Copy entire buffer to system clipboard" })
 
-vim.keymap.set({"n", "v"}, "<leader>dv", [["_d]], { desc = "Delete to black hole register" })
+vim.keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save file" })
 
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format current buffer" })
