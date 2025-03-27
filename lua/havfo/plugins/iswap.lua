@@ -4,5 +4,4 @@ return {
 	config = function()
 		vim.keymap.set('n', '<A-m>', ':IMoveWith<CR>')
 	end
-
 }

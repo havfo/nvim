@@ -4,13 +4,12 @@ return {
 		'williamboman/mason.nvim',
 		'williamboman/mason-lspconfig.nvim',
 		{ 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
-		'folke/neodev.nvim',
+		'saghen/blink.cmp',
 	},
 	config = function()
 		local servers = {
 			clangd = {},
 			gopls = {},
-			pyright = {},
 			eslint = {},
 			rust_analyzer = {},
 			ts_ls = {},
@@ -65,10 +64,9 @@ return {
 
 		require('mason').setup()
 		require('mason-lspconfig').setup()
-		require('neodev').setup()
 
 		local capabilities = vim.lsp.protocol.make_client_capabilities()
-		capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
+		capabilities = require('blink.cmp').get_lsp_capabilities(capabilities)
 
 		local mason_lspconfig = require('mason-lspconfig')
 
